@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'الترحيب🙌-•');
+    let channel = member.guild.channels.find('name', '🙌-•welcome-•🙌');
     let memberavatar = member.user.avatarURL
       if (!channel) return;
     let embed = new Discord.RichEmbed()
@@ -37,7 +37,7 @@ client.on('guildMemberAdd', member => {
         .setColor('RED')
         .setFooter(`====شكرا للاستمتاع====`, ' https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
     
-    var channel =member.guild.channels.find('name', 'الترحيب🙌-•')
+    var channel =member.guild.channels.find('name', '🙌-•welcome-•🙌')
     if (!channel) return;
     channel.send({embed : embed});
     })
@@ -50,7 +50,7 @@ client.on('guildMemberAdd', member => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Welcome | #♛ ExPlosive ♛`,"http://twitch.tv/Death Shop")
+client.user.setGame(`Welcome | #♛ Fantasy - Server ♛`,"http://twitch.tv/Death Shop")
 client.user.setStatus("online")
 });
 
