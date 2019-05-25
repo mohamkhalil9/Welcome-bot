@@ -51,7 +51,7 @@ client.on('guildMemberAdd', member => {
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(`Welcome | #♛ Fantasy - Server ♛`,"http://twitch.tv/Death Shop")
-client.user.setStatus("online")
+client.user.setStatus("dnd")
 });
 
 	
