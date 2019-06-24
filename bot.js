@@ -11,7 +11,6 @@ client.on('guildMemberAdd', member => {
   
     .setDescription('**https://cdn.discordapp.com/attachments/592539684664770561/592542955554865164/welcome_4.png**')
     .setColor('RANDOM')
-    .setImage('https://cdn.discordapp.com/attachments/592539684664770561/592542955554865164/welcome_4.png')
 var channel =member.guild.channels.find('name', '🙌『الـترحيب』-•')
 if (!channel) return;
 channel.send({embed : embed});
