@@ -17,16 +17,7 @@ var channel =member.guild.channels.find('name', '🙌『الـترحيب』-•'
 if (!channel) return;
 channel.send({embed : embed});
 });
-	
-client.on('guildMemberAdd', member => {
-  member.guild.fetchInvites().then(guildInvites => {
-    const ei = invites[member.guild.id];
-    const invite = guildInvites.find(i => ei.get(i.code).uses < i.uses);
-    const inviter = client.users.get(invite.inviter.id);
-    const xkiller = member.guild.channels.find("name", "🙌『الـترحيب』-•");
-     xkiller.send(`<@${member.user.id}> Invited By <@${inviter.id}>`);
-  });
-});	
+		
 
     client.on('guildMemberRemove', member => {
         var embed = new Discord.RichEmbed()
