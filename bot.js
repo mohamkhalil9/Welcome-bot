@@ -12,7 +12,7 @@ client.on('guildMemberAdd', member => {
   .addField('➡| انت العضو رقم',`${member.guild.memberCount}`)
     .setDescription('**__نتمنى لك قضآء أجمل اللحظات والأوقات معنا__**')
     .setColor('RANDOM')
-    .setImage('https://cdn.discordapp.com/attachments/590669646806646806/592554419628015616/Untitled-1.png')
+    .setImage('https://media.giphy.com/media/oe33xf3B50fsc/giphy.gif')
 var channel =member.guild.channels.find('name', '🙌『الـترحيب』-•')
 if (!channel) return;
 channel.send({embed : embed});
