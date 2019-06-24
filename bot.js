@@ -37,10 +37,9 @@ client.on('guildMemberAdd', member => {
         .addField(':bust_in_silhouette:   تبقي',`**[ ${member.guild.memberCount} ]**`,true)
         .setColor('RANDOM')
         .setFooter(`====شكرا للاستمتاع====`, ' https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
-    
-    var channel =member.guild.channels.find('name', '🙌『الـترحيب』-•')
-    if (!channel) return;
-    channel.send({embed : embed});
+var channel =member.guild.channels.find('name', '🙌『الـترحيب』-•')
+if (!channel) return;
+channel.send({embed : embed});
 	
 	
 	
