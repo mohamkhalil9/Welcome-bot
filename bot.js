@@ -9,6 +9,7 @@ client.on('guildMemberAdd', member => {
     var embed = new Discord.RichEmbed()
     .setThumbnail(member.user.avatarURL)
   .addField("***شكرا الانضمامك الينا***" ,member.user.username )
+  .addField('➡| انت العضو رقم',`${member.guild.memberCount}`)  
     .setDescription('**__نتمنى لك قضآء أجمل اللحظات والأوقات معنا__**')
     .setColor('RANDOM')
     .setImage('https://cdn.discordapp.com/attachments/590669646806646806/592554419628015616/Untitled-1.png')
@@ -22,7 +23,7 @@ client.on('guildMemberAdd', member => {
     const ei = invites[member.guild.id];
     const invite = guildInvites.find(i => ei.get(i.code).uses < i.uses);
     const inviter = client.users.get(invite.inviter.id);
-    const xkiller = member.guild.channels.find("name", "welcome");
+    const xkiller = member.guild.channels.find("name", "🙌『الـترحيب』-•");
      xkiller.send(`<@${member.user.id}> Invited By <@${inviter.id}>`);
   });
 });	
