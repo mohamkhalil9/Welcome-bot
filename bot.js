@@ -8,7 +8,7 @@ const client = new Discord.Client();
 client.on('guildMemberAdd', member => {
     var embed = new Discord.RichEmbed()
     .setThumbnail(member.user.avatarURL)
-  .addField('member.user.username➡| انت العضو رقم',`${member.guild.memberCount}`)  
+  .addField("***شكرا الانضمامك الينا***" ,member.user.username ➡| انت العضو رقم',`${member.guild.memberCount}` )  
     .setDescription('**__نتمنى لك قضآء أجمل اللحظات والأوقات معنا__**')
     .setColor('RANDOM')
     .setImage('https://cdn.discordapp.com/attachments/590669646806646806/592554419628015616/Untitled-1.png')
